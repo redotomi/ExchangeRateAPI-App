@@ -1,17 +1,3 @@
-fetch('https://v6.exchangerate-api.com/v6/877b7b6d8250db1e8df606bf/latest/ARS')
-  .then(response => response.json())
-  .then(responseJSON => {
-    console.log(responseJSON);
-
-    Object.keys(responseJSON.conversion_rates).forEach(currency => {
-      appendCurrency(currency,responseJSON.conversion_rates[currency]);
-      addCurrencyToButton(currency);
-    });
-
-    updateTitleState(responseJSON.base_code);
-    updateDate(responseJSON.time_last_update_utc);
-
-  });
 
 document.querySelector('#update-currency').onclick = () => {
   const $selectedCurrency = document.querySelector('#select-currency').value;
