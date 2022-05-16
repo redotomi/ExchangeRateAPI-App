@@ -56,4 +56,29 @@ function removePreviousTable() {
     item.innerHTML = '';
   });
 }
-  
+
+function fetchAndDisplayCurrencies() {
+  fetchCurrencies()
+    .then(data => printCurrencies(data))
+    .catch(error => console.log(error));
+}
+
+function printCurrencies(ratesData) {
+  Object.entries(ratesData.conversion_rates).forEach(([currency, value]) => {
+    appendCurrency(currency, value);
+    addCurrencyToButton(currency);
+  });
+
+  updateTitleState(ratesData.base_code);
+  updateDate(ratesData.time_last_update_utc);
+}
+
+
+async function fetchCurrencies() {
+  const response = await fetch('https://v6.exchangerate-api.com/v6/877b7b6d8250db1e8df606bf/latest/ARS');
+  if (!response.ok)
+    throw new Error(response.error);
+  return response.json();
+}
+
+fetchAndDisplayCurrencies();
