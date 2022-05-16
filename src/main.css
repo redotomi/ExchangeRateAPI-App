@@ -8,47 +8,26 @@ h1{
     margin: 3vh 0vh;
 }
 
-html::-webkit-scrollbar{
-    width: 2vh; 
- }
-html::-webkit-scrollbar-thumb{
-    background-color: #2d343a;
-    border-radius: 1vh;
-    border: #4c535a solid 0.1vh;
-}
-html::-webkit-scrollbar-track{
-    background-color: #4c535a;
-    border-radius: 1vh;
-}
-
-
-
-#table::-webkit-scrollbar{
-   width: 2vh; 
-}
-#table::-webkit-scrollbar-thumb{
-    background-color: #2d343a;
-    border-radius: 1vh;
-    border: #4c535a solid 0.1vh;
-}
-#table::-webkit-scrollbar-track{
-    background-color: #4c535a;
-    border-radius: 1vh;
-}
-
+html::-webkit-scrollbar,
+#table::-webkit-scrollbar,
 .select-currency::-webkit-scrollbar{
-    width: 2vh; 
- }
-.select-currency::-webkit-scrollbar-thumb{
-    background-color: #2d343a;
-    border-radius: 1vh;
-    border: #4c535a solid 0.1vh;
-}
-.select-currency::-webkit-scrollbar-track{
-    background-color: #4c535a;
-    border-radius: 1vh;
+    width: 2vh;
 }
 
+html::-webkit-scrollbar-thumb,
+#table::-webkit-scrollbar-thumb,
+.select-currency::-webkit-scrollbar-thumb{
+  background-color: #2d343a;
+  border-radius: 1vh;
+  border: #4c535a solid 0.1vh;
+}
+
+html::-webkit-scrollbar-track,
+#table::-webkit-scrollbar-track,
+.select-currency::-webkit-scrollbar-track{
+    border-radius: 1vh;
+    background-color: #4c535a;
+}
 
 .my-custom-scrollbar {
     margin: 2em 4em;
