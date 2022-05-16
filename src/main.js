@@ -43,8 +43,8 @@ function updateBaseCurrency(currency) {
   fetch(`https://v6.exchangerate-api.com/v6/877b7b6d8250db1e8df606bf/latest/${currency}`)
     .then(response => response.json())
     .then(responseJSON => {
-      Object.keys(responseJSON.conversion_rates).forEach(currency => {
-        appendCurrency(currency,responseJSON.conversion_rates[currency]);
+      Object.entries(responseJSON.conversion_rates).forEach(([currency, value]) => {
+        appendCurrency(currency, value);
       });
     updateTitleState(responseJSON.base_code);
   });
