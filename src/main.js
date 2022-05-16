@@ -1,8 +1,8 @@
 
 document.querySelector('#update-currency').onclick = () => {
-  const $selectedCurrency = document.querySelector('#select-currency').value;
+  const selectedCurrency = document.querySelector('#select-currency').value;
   removePreviousTable(); 
-  updateBaseCurrency($selectedCurrency);
+  updateBaseCurrency(selectedCurrency);
 }
 
 
