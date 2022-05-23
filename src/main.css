@@ -1,0 +1,53 @@
+body{
+    text-align: center;
+    background-color: #303336;
+    color: white;
+}
+
+h1{
+    margin: 3vh 0vh;
+}
+
+html::-webkit-scrollbar,
+#table::-webkit-scrollbar,
+.select-currency::-webkit-scrollbar{
+    width: 2vh;
+}
+
+html::-webkit-scrollbar-thumb,
+#table::-webkit-scrollbar-thumb,
+.select-currency::-webkit-scrollbar-thumb{
+  background-color: #2d343a;
+  border-radius: 1vh;
+  border: #4c535a solid 0.1vh;
+}
+
+html::-webkit-scrollbar-track,
+#table::-webkit-scrollbar-track,
+.select-currency::-webkit-scrollbar-track{
+    border-radius: 1vh;
+    background-color: #4c535a;
+}
+
+.my-custom-scrollbar {
+    margin: 2em 4em;
+    position: relative;
+    height: 70vh;
+    overflow: auto;
+    border: 1px solid rgb(85, 85, 85);
+    border-radius: 15px;
+}
+
+.table-wrapper-scroll-y {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.select-currency {
+    color: white;
+    background-color: #2d343a;
+    border-radius: 4px;
+}

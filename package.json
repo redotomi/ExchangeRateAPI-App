@@ -1,0 +1,23 @@
+{
+  "name": "exchangerateapi-app",
+  "version": "1.0.0",
+  "description": "Aplicación de tabla de cambios en base a la Web API ExchangeRate",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy-open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redotomi/ExchangeRateAPI-App.git"
+  },
+  "author": "redotomi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/redotomi/ExchangeRateAPI-App/issues"
+  },
+  "homepage": "https://github.com/redotomi/ExchangeRateAPI-App#readme",
+  "devDependencies": {
+    "cypress": "^9.6.1"
+  }
+}
